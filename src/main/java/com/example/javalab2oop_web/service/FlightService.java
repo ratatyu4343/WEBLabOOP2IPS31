@@ -15,9 +15,9 @@ public class FlightService {
         UserService userService = new UserService();
         List<User> pilotes = userService.getPilotes();
         List<User> stuards = userService.getStuards();
-        flights.add(new Flight(++ID, pilotes.get(0), pilotes.get(2), stuards.get(0), stuards.get(1), "Kyiv", "Paris", "14.06.2023"));
-        flights.add(new Flight(++ID, pilotes.get(1), pilotes.get(0), stuards.get(2), stuards.get(0), "Paris", "London", "15.06.2023"));
-        flights.add(new Flight(++ID, pilotes.get(2), pilotes.get(1), stuards.get(1), stuards.get(2), "London", "Kyiv", "16.06.2023"));
+        flights.add(new Flight(++ID, pilotes.get(0).getName(), pilotes.get(2).getName(), stuards.get(0).getName(), stuards.get(1).getName(), "Kyiv", "Paris", "14.06.2023"));
+        flights.add(new Flight(++ID, pilotes.get(1).getName(), pilotes.get(0).getName(), stuards.get(2).getName(), stuards.get(0).getName(), "Paris", "London", "15.06.2023"));
+        flights.add(new Flight(++ID, pilotes.get(2).getName(), pilotes.get(1).getName(), stuards.get(1).getName(), stuards.get(2).getName(), "London", "Kyiv", "16.06.2023"));
     }
 
     public List<Flight> list(){

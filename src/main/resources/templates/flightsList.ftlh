@@ -18,10 +18,10 @@
         </tr>
         <#list flights as flight>
             <tr>
-                <td>${flight.pilot.name}</td>
-                <td>${flight.shturman.name}</td>
-                <td>${flight.stuard1.name}</td>
-                <td>${flight.stuard2.name}</td>
+                <td>${flight.pilot}</td>
+                <td>${flight.shturman}</td>
+                <td>${flight.stuard1}</td>
+                <td>${flight.stuard2}</td>
                 <td>${flight.from}</td>
                 <td>${flight.to}</td>
                 <td>${flight.date}</td>
